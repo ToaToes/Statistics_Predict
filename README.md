@@ -1,8 +1,7 @@
 # Statistics_Predict
 Telegram bot + Python script + Xgboost Model
 
-
-'''
+```
           ┌───────────────┐
           │ Telegram 用户 │
           │ 发送命令     │
@@ -53,4 +52,4 @@ Telegram bot + Python script + Xgboost Model
 │ - 可选通知每日策略调仓        │
 └──────────────────────────────┘
 
-'''
+```
