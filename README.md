@@ -1,6 +1,7 @@
 # Statistics_Predict
 Telegram bot + Python script + Xgboost Model
 
+
 **工作流程说明**
 
 1. 远程触发
@@ -32,6 +33,8 @@ XGBoost 接收特征表 → 输出未来收益率或排序分数
 Telegram Bot 自动发送表格 / 图表 / 调仓建议
 
 
+
+解释图：
 ```
           ┌───────────────┐
           │ Telegram 用户 │
