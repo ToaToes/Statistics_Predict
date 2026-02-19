@@ -1,6 +1,37 @@
 # Statistics_Predict
 Telegram bot + Python script + Xgboost Model
 
+**工作流程说明**
+
+1. 远程触发
+
+用户在 Telegram 发送命令 /predict_today
+
+Bot 解析命令 → 调用 Python 脚本
+
+2. 数据抓取
+
+API 或 token 获取最新股票价格、复权因子
+
+可选抓取财报、宏观因子、Fama-French 因子、新闻情绪
+
+3. 特征工程
+
+生成滚动指标、标准化、one-hot 编码
+
+输出可直接喂 XGBoost 的特征表
+
+4. 模型预测
+
+XGBoost 接收特征表 → 输出未来收益率或排序分数
+
+可以保存预测结果以供调仓
+
+5. 结果返回
+
+Telegram Bot 自动发送表格 / 图表 / 调仓建议
+
+
 ```
           ┌───────────────┐
           │ Telegram 用户 │
