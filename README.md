@@ -1,3 +1,6 @@
+### “我用什么模型？”  ->  “我有什么信息优势？”
+
+
 # Statistics_Predict
 Telegram bot + Python script + Xgboost Model
 
