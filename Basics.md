@@ -95,9 +95,11 @@ volume_change  ████████████  0.42
 这个信息能用来做什么 
 
 1. 删掉没用的特征 <br>
-python# 重要性低于5%的特征直接删掉 <br>
-
+```
+重要性低于5%的特征直接删掉 
 # 减少噪音，模型更准
+```
+
 ```
 useful_features = importance_df[importance_df['重要性'] > 0.05]['特征'].tolist()
 X_clean = X[useful_features]
