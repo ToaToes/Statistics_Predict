@@ -131,3 +131,19 @@ X_clean = X[useful_features]
 
 OKX API： 
 https://www.okx.com/docs-v5/en/#overview
+
+```
+1. 拉数据    OKX API → 500根K线
+      ↓
+2. 造特征   涨跌幅、成交量变化、K线结构
+      ↓
+3. 造标签   下一小时涨=1，跌=0
+      ↓
+4. 切数据   前80%训练，后20%测试
+      ↓
+5. 训练     model.fit(X_train, y_train)
+      ↓
+6. 评估     准确率、混淆矩阵、特征重要性
+      ↓
+7. 预测     最新K线 → 涨跌概率
+```
