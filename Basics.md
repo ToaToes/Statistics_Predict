@@ -147,3 +147,7 @@ https://www.okx.com/docs-v5/en/#overview
       ↓
 7. 预测     最新K线 → 涨跌概率
 ```
+
+4.
+
+网格搜索优化（充分利用32GB）
